@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.admin-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgb(111, 180, 177), rgb(233, 92, 92));
+}
+
+form {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 300px;
+}
+
+h2 {
+    color: rgb(233, 92, 92);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: rgb(111, 180, 177);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(52, 167, 196);
+}
+
+p {
+    margin: 10px 0;
+    text-align: center;
+}
+.login-text {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.login-link {
+    color: rgb(233, 92, 92);   /* same theme as your h2 */
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.login-link:hover {
+    color: rgb(111, 180, 177); /* hover color */
+    text-decoration: underline;
+}

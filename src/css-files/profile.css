@@ -1,0 +1,79 @@
+.profile-container {
+  font-family: Arial, sans-serif;
+  background-color: #ecf0f1;
+  min-height: 100vh;
+}
+
+.profile-content {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.left-profile {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.right-profile {
+  flex: 2;
+  display: flex;
+  gap: 20px;
+}
+
+.flashcard {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.flashcard:hover {
+  transform: translateY(-10px);
+}
+
+.flashcard-details {
+  margin-top: 10px;
+  display: none;
+  text-align: left;
+}
+
+.flashcard:hover .flashcard-details {
+  display: block;
+}
+.left-profile .form-group {
+  margin-bottom: 15px;
+}
+
+.left-profile label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.left-profile input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.left-profile button {
+  background-color:rgb(43, 96, 93);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.left-profile button:hover {
+  background-color:  rgb(10, 101, 96);
+}

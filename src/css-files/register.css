@@ -1,0 +1,117 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Container covers full page */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    background: linear-gradient(rgb(111, 180, 177), rgb(233, 92, 92));
+    box-sizing: border-box;
+}
+
+/* Form takes exactly 75% of viewport width */
+form {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 55%;          /* strictly 75% of parent container */
+    max-width: none;      /* remove extra limit */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+
+/* Form group spacing */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(233, 92, 92);
+    font-weight: bold;
+}
+
+/* Input and select styling */
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+button {
+    background-color: rgb(111, 180, 177);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(52, 167, 196);
+}
+
+/* Error and success messages */
+small,
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: #28a745;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    form {
+        width: 70vw;
+    }
+}
+
+.login-text {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.login-link {
+    color: rgb(233, 92, 92);   /* same theme as your h2 */
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.login-link:hover {
+    color: rgb(111, 180, 177); /* hover color */
+    text-decoration: underline;
+}
+
